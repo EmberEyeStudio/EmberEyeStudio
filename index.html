@@ -1,296 +1,506 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Ember Eye Studio</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta
+      name="description"
+      content="Ember Eye Studio - Software development"
+    />
+    <meta
+      name="keywords"
+      content="Ember Eye, Eternal Vigil, game studio, indie games, custom software, Tsar Engine"
+    />
+    <meta name="author" content="Ember Eye Studio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <link rel="icon" type="image/x-icon" href="images/Logo.jpg" />
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="css/index.css">
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/lightbox.min.js"></script>
-</head>
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
 
-<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Ember Eye Studio</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-lg-auto">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link smoothScroll">Home</a>
-                    </li>
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
 
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link smoothScroll">About Us</a>
-                    </li>
+  <body data-spy="scroll" data-target="#navbarNav" data-offset="80">
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar navbar-expand-lg fixed-top glass-nav">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#home">
+          <img
+            src="images/Logo.jpg"
+            alt="Ember Eye Logo"
+            class="brand-logo mr-2"
+          />
+          <span>Ember Eye Studio</span>
+        </a>
 
-                    <li class="nav-item">
-                        <a href="#game" class="nav-link smoothScroll">Game</a>
-                    </li>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-                    <li class="nav-item">
-                        <a href="#photos" class="nav-link smoothScroll">Photos</a>
-                    </li>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-lg-auto">
+            <li class="nav-item">
+              <a href="#home" class="nav-link smoothScroll">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link smoothScroll">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#game" class="nav-link smoothScroll">Game</a>
+            </li>
+            <li class="nav-item">
+              <a href="#gallery" class="nav-link smoothScroll">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a href="#services" class="nav-link smoothScroll">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link smoothScroll">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a href="portfolio.html" class="nav-link">Portfolio</a>
+              </li>
+            <li class="nav-item">
+              <a
+                href="https://tsarengine.com"
+                class="nav-link active"
+                target="_blank"
+                rel="noopener"
+              >
+                Tsar Engine
+              </a>
+            </li>
+          </ul>
 
-                    <li class="nav-item">
-                        <a href="#solutions" class="nav-link smoothScroll">Solutions</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="http://tsarengine.com/" class="nav-link smoothScroll">Tsar</a>
-                    </li>
-                </ul>
-                <ul class="social-icon ml-lg-3">
-                    <li><a href="https://www.facebook.com/profile.php?id=100094322662442" class="fa fa-facebook"></a>
-                    </li>
-                    <li><a href="https://twitter.com/embereyestudio" class="fa fa-twitter"></a></li>
-                    <li><a href="https://www.instagram.com/embereyeofficial/" class="fa fa-instagram"></a></li>
-                    <li><a href="https://www.youtube.com/@EmberEyeStudio" class="fa fa-youtube-play"></a></li>
-                </ul>
-            </div>
+          <ul class="social-icon ml-lg-3 d-none d-md-flex">
+            <li>
+              <a
+                href="https://www.facebook.com/profile.php?id=100094322662442"
+                class="fa fa-facebook"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/embereyestudio"
+                class="fa fa-twitter"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/embereyeofficial/"
+                class="fa fa-instagram"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/@EmberEyeStudio"
+                class="fa fa-youtube-play"
+              ></a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
-    <section class="hero d-flex flex-column justify-content-center align-items-center" id="home">
-        <div class="bg-overlay"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-md-10 mx-auto col-12">
-                    <div class="hero-text mt-5 text-center">
-                        <h6 data-aos="fade-up" data-aos-delay="300">Welcome to</h6>
-                        <h1 class="text-white" data-aos="fade-up" data-aos-delay="500">Ember Eye Studio</h1>
-                        <a href="#feature" class="btn custom-btn mt-3" data-aos="fade-up" data-aos-delay="600">About
-                            us</a>
-                        <a href="#contact" class="btn custom-btn bordered mt-3" data-aos="fade-up"
-                            data-aos-delay="700">Contact</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="feature" id="feature">
-        <div class="container">
-            <div class="row">
-                <div class="d-flex flex-column justify-content-center ml-lg-auto mr-lg-5 col-lg-5 col-md-6 col-12">
-                    <h2 class="mb-3 text-white" data-aos="fade-up">Who are we?</h2>
-                    <h6 class="mb-4 text-white" data-aos="fade-up">We're ambitious students dedicated to giving our best
-                        to the community!</h6>
-                </div>
-                <div class="mr-lg-auto mt-3 col-lg-4 col-md-6 col-12">
-                    <div class="about-working-hours">
-                        <div>
-                            <h2 class="mb-4 text-white" data-aos="fade-up">What we do?</h2>
-                            <h6 class="mb-4 text-white" data-aos="fade-up">We create games, websites,
-                                and tackle any challenge you present!</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
-    <section class="about section " id="about" style="background-color: #2b2b2b;">
-        <div class="container">
-            <div class="row">
-                <div class="mt-lg-5 mb-lg-0 mb-4 col-lg-5 col-md-10 mx-auto col-12 text-white">
-                    <h2 class="mb-4 text-white" data-aos="fade-up" data-aos-delay="300">Hello, we are Ember Eye</h2>
 
-                    <p data-aos="fade-up" data-aos-delay="400" class="text-white">As a passionate group of students,
-                        we're united in our
-                        dream to become a leading game development studio, transforming
-                        our collective vision into reality through collaboration and innovation.</p>
+    <section id="home" class="section hero-section d-flex align-items-center">
+      <div class="hero-overlay"></div>
+      <div class="container position-relative">
+        <div class="glass-card row align-items-center">
+          <div class="col-lg-7 mb-4 mb-lg-0" data-aos="fade-up">
+            <div class="p-4 p-md-5 hero-card">
+              <p class="hero-eyebrow mb-2 text-uppercase">
+                Ember Eye Studio
+              </p>
+              <h2 class="mb-3">
+                We’re a small, focused team crafting atmospheric games and
+                bespoke software. From games to custom tools and web
+                experiences, we care about mood, feel, and identity.
+              </h1>
+              <p class="lead mb-4"></p>
+              <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
+                <a href="#services" class="btn custom-btn mr-2 mb-2"
+                  >Let's work together</a
+                >
+                <a href="./portfolio.html" class="btn custom-btn bordered mb-2"
+                  >Portfolio</a
+                >
+              </div>
+              <div class="tab-content small text-muted" id="heroTabContent">
+                <div
+                  class="tab-pane fade"
+                  id="pane-team"
+                  role="tabpanel"
+                  aria-labelledby="tab-team"
+                >
+                  Developers with a long-term goal: grow Ember Eye into a fully
+                  independent studio.
                 </div>
-                <div class="ml-lg-auto col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="700">
-                    <div class="team-thumb">
-                        <img src="images/Logo.jpg" class="img-fluid" alt="Trainer">
-                        <div class="team-info d-flex flex-column">
-                            <h3>Ember Eye</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="mr-lg-auto mt-5 mt-lg-0 mt-md-0 col-lg-3 col-md-6 col-12" data-aos="fade-up"
-                    data-aos-delay="800">
-                    <div class="team-thumb">
-                        <img src="images/GameLogoPortrait.png" class="img-fluid" alt="logoEV">
+              </div>
+            </div>
+          </div>
 
-                        <div class="team-info d-flex flex-column ">
-                            <h3>Eternal Vigil</h3>
-                        </div>
-                    </div>
-                </div>
+          <div class="col-lg-5" data-aos="fade-up">
+            <div class="text-center hero-logo-card p-4">
+              <img
+                src="images/Logo.jpg"
+                alt="Ember Eye Studio Logo"
+                class="img-fluid mb-3 hero-company-logo"
+              />
+              <button class="btn custom-btn mr-2 mb-2" id="scrollToAboutBtn">
+                Learn more about the studio
+              </button>
             </div>
+          </div>
         </div>
-    </section>
-    <section class="game section" id="game">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-12 text-center mb-5 text-white">
-                    <h6 data-aos="fade-up" class="text-white">Check out our latest game</h6>
-                    <h2 data-aos="fade-up" data-aos-delay="200">Eternal Vigil</h2>
-                </div>
-                <div class="col-lg-12 col-md-12 col-12" data-aos="fade-up" data-aos-delay="400">
-                    <div class="class-info">
-                        <iframe data-aos="fade-up" data-aos-delay="200" style="width: 100%; height:200px"
-                            src="https://store.steampowered.com/widget/2543750/" frameborder="0"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="photos section" id="photos" style="background-color: #2b2b2b;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-12 text-center text-white" data-aos-delay="200">
-                    <h6 data-aos="fade-up" class="text-white">Eternal Vigil</h6>
-                    <h2 class="text-black" data-aos="fade-up" data-aos-delay="200">Game Pictures</h2>
-
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="5000"
-                        data-aos-delay="200">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                        </ol>
-                        <div class="carousel-inner" data-aos-delay="200">
-                            <div class="carousel-item active" data-aos-delay="200">
-                                <img class="d-block w-100" src="images/game1.png" alt="First slide"
-                                    style="padding: 20px;">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="images/game2.png" alt="Second slide"
-                                    style="padding: 20px;">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="images/game3.png" alt="Third slide"
-                                    style="padding: 20px;">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="images/game4.png" alt="Fourth slide"
-                                    style="padding: 20px;">
-                            </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
-                            data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
-                            data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </section>
 
-    <section class="custom-solutions section" id="solutions" style="background-color: #171819; color: white;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-12 text-center mb-5">
-                    <h6 data-aos="fade-up" class="text-white">Our Services</h6>
-                    <h2 class="text-white" data-aos="fade-up" data-aos-delay="200">Custom Solutions</h2>
+    <section id="about" class="section">
+      <div class="container">
+        <div class="row align-items-center mb-4">
+          <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-up">
+            <h2>About Ember Eye Studio</h2>
+            <p>
+              We’re a small team who decided to treat our passion seriously.
+              Ember Eye is our space to experiment with gameplay, visuals, and
+              tools, while building up a real studio foundation.
+            </p>
+            <p>
+              We like systems that feel good to use, worlds that feel alive, and
+              interfaces that make sense without getting in your way.
+            </p>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up">
+            <div class="glass-card p-4">
+              <div class="row text-center">
+                <div class="col-6 mb-3">
+                  <p class="text-uppercase small text-muted mb-1">Team</p>
+                  <p class="mb-0">Passioned and hardworking</p>
                 </div>
+                <div class="col-6 mb-3">
+                  <p class="text-uppercase small text-muted mb-1">Focus</p>
+                  <p class="mb-0">Perfection</p>
+                </div>
+                <div class="col-6">
+                  <p class="text-uppercase small text-muted mb-1">Projects</p>
+                  <p class="mb-0">Games & Software</p>
+                </div>
+                <div class="col-6">
+                  <p class="text-uppercase small text-muted mb-1">Goal</p>
+                  <p class="mb-0">Independent Studio</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-                <div class="col-lg-10 col-md-10 mx-auto col-12 text-white">
-                    <p data-aos="fade-up" data-aos-delay="300" class="text-white">
-                        In addition to our own projects, Ember Eye Studio offers custom solutions tailored to your
-                        specific
-                        needs. Whether you’re looking for a desktop application, website, or a fully-featured game,
-                        we’re
-                        here to bring your vision to life with our expertise and commitment to quality.
+        <div class="row">
+            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <a href="https://tsarengine.com" style="text-decoration: none;">
+                <div class="glass-card d-flex align-items-center p-3">
+                  <img
+                    src="images/Tsar_Logo.webp"
+                    alt="Eternal Vigil"
+                    class="about-logo mr-3"
+                  />
+                  <div>
+                    <h3 class="mb-1">Tsar Engine</h3>
+                    <p class="mb-0 small text-muted">
+                        Game engine buit with passion 
                     </p>
-                    <p data-aos="fade-up" data-aos-delay="400" class="text-white">
-                        Let’s collaborate to create something unique! Reach out to us, and together, we’ll develop a
-                        solution that exceeds your expectations.
-                    </p>
-                    <div class="text-center mt-4" data-aos="fade-up" data-aos-delay="500">
-                        <a href="#contact" class="btn custom-btn mt-3">Contact Us</a>
-                    </div>
+                  </div>
                 </div>
+                </a>
             </div>
+          <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+           <a href="https://store.steampowered.com/app/2543750" style="text-decoration: none;"> <div class="glass-card d-flex align-items-center p-3">
+              <img
+                src="images/GameLogoPortrait.png"
+                alt="Eternal Vigil"
+                class="about-logo mr-3"
+              />
+              <div>
+                <h3 class="mb-1">Eternal Vigil</h3>
+                <p class="mb-0 small text-muted">
+                  Our flagship project – an atmospheric, combat-focused
+                  experience.
+                </p>
+              </div>
+            </div>
+            </a>
+          </div>
         </div>
+      </div>
     </section>
 
+    <section id="game" class="section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-up">
+            <h2>Eternal Vigil</h2>
+            <p>
+              Eternal Vigil is built around deliberate combat, strong
+              atmosphere, and a world that feels heavy and grounded. We care
+              about responsiveness, impact, and a clear visual identity.
+            </p>
+            <ul class="list-unstyled small mb-3">
+              <li>• Weighty, responsive combat</li>
+              <li>• Stylized, moody environments</li>
+              <li>• Tight focus on player experience</li>
+            </ul>
+            <p class="small text-muted mb-0">
+              Wishlist and follow us on Steam to support development.
+            </p>
+          </div>
 
-    <section class="contact section" id="contact" style="background-color: #2b2b2b;">
-        <div class="container">
-            <div class="row">
-                <div class="mx-auto mt-4 mt-lg-0 mt-md-0 col-lg-5 col-md-6 col-12 text-center">
-                    <h2 class="mb-4" data-aos="fade-up" data-aos-delay="600">You can <span>find us
-                            at</span></h2>
-                    <div class="row d-flex flex-row text-white display-1 text-center align-items-center justify-content-center"
-                        data-aos="fade-up" data-aos-delay="600">
-                        <a href="https://www.facebook.com/profile.php?id=100094322662442"
-                            class="fa fa-facebook facebook display-2 socialss"></a>
-                        <a href="https://twitter.com/embereyestudio"
-                            class="fa fa-twitter text-white display-2 socialss"></a>
-                        <a href="https://www.instagram.com/embereyeofficial/"
-                            class="fa fa-instagram instagram display-2 socialss"></a>
-                        <a href="https://www.youtube.com/@EmberEyeStudio"
-                            class="fa fa-youtube-play youtube display-2 socialss"></a>
-                    </div>
-                </div>
-
+          <div class="col-lg-6" data-aos="fade-up">
+            <div class="glass-card p-3">
+              <iframe
+                style="width: 100%; height: 190px"
+                src="https://store.steampowered.com/widget/2543750/"
+                frameborder="0"
+              ></iframe>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
-
-    <footer class="site-footer border-0" style="background-color: #171819">
-        <div class="container" style="color:white;">
-            <div class="row">
-                <div class="ml-auto col-lg-4 col-md-5 ">
-                    <p class="copyright-text" style="color:white;">Copyright &copy; 2024 Ember Eye Studio
-                    </p>
-                </div>
-                <div class="d-flex justify-content-center mx-auto col-lg-5 col-md-7 col-12">
-                    <p class="mr-4">
-                        <i class="fa fa-envelope-o mr-1" style="color:white;"></i>
-                        <a href="#" style="color:white;">embereyeofficial@gmail.com</a>
-                    </p>
-                </div>
-            </div>
+    <section id="gallery" class="section">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-lg-8" data-aos="fade-up">
+            <h2>Gallery</h2>
+            <p>
+              Work-in-progress glimpses from Eternal Vigil. Click an image to
+              view it larger.
+            </p>
+          </div>
         </div>
-    </footer>
 
-
-    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <img id="gameImage" class="img-fluid" alt="Game Image">
-                </div>
+        <div class="row">
+          <div class="col-6 col-md-6 mb-4" data-aos="fade-up">
+            <div class="glass-card p-2 gallery-item">
+              <img
+                src="images/game1.png"
+                alt="Screenshot 1"
+                class="img-fluid gallery-img"
+              />
             </div>
+          </div>
+          <div
+            class="col-6 col-md-6 mb-4"
+            data-aos="fade-up"
+            data-aos-delay="50"
+          >
+            <div class="glass-card p-2 gallery-item">
+              <img
+                src="images/game2.png"
+                alt="Screenshot 2"
+                class="img-fluid gallery-img"
+              />
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-6 mb-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="glass-card p-2 gallery-item">
+              <img
+                src="images/game3.png"
+                alt="Screenshot 3"
+                class="img-fluid gallery-img"
+              />
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-6 mb-4"
+            data-aos="fade-up"
+            data-aos-delay="150"
+          >
+            <div class="glass-card p-2 gallery-item">
+              <img
+                src="images/game4.png"
+                alt="Screenshot 4"
+                class="img-fluid gallery-img"
+              />
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark border-0">
+          <div class="modal-header border-0">
+            <button
+              type="button"
+              class="close text-white"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <img id="galleryModalImg" src="" alt="" class="img-fluid" />
+          </div>
+        </div>
+      </div>
     </div>
 
+    <section id="services" class="section">
+      <div class="container">
+        <div class="row mb-4">
+            <div class="col-md-4 mb-4" data-aos="fade-up">
+                <div class="glass-card p-4 h-100 text-center">
+                    <i class="fa fa-gamepad service-icon mb-3"></i>
+                    <h3 class="mb-2">Game Prototypes</h3>
+                    <p class="mb-0 small">
+                    Vertical slices, prototypes, and small titles focused on
+                    mechanics, feel, and presentation.
+                    </p>
+                </div>
+                </div>
+                
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="50">
+                <div class="glass-card p-4 h-100 text-center">
+                    <i class="fa fa-code service-icon mb-3"></i>
+                    <h3 class="mb-2">Web Experiences</h3>
+                    <p class="mb-0 small">
+                    Landing pages, studio sites, and interactive web pieces with a
+                    consistent visual identity.
+                    </p>
+                </div>
+                </div>
+                
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="glass-card p-4 h-100 text-center">
+                    <i class="fa fa-cogs service-icon mb-3"></i>
+                    <h3 class="mb-2">Tools & Utilities</h3>
+                    <p class="mb-0 small">
+                    Custom tools and small desktop apps to support pipelines and
+                    creative workflows.
+                    </p>
+                </div>
+            </div>              
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12" data-aos="fade-up">
+            <div class="glass-card p-4">
+              <h2>Contact</h2>
+              <p>
+                Interested in a collaboration, or a custom
+                project? Reach out and we’ll get back to you.
+              </p>
+              <p class="mb-2">
+                <i class="fa fa-envelope-o mr-2"></i>
+                <a href="mailto:embereyeofficial@gmail.com"
+                  >embereyeofficial@gmail.com</a
+                >
+              </p>
+              <p class="small text-muted mb-0">
+                Our social links are always in the header if you just want to
+                follow our progress.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-md-left text-center mb-2 mb-md-0">
+            <p class="mb-0 small">© 2025 Ember Eye Studio</p>
+          </div>
+          <div class="col-md-6 text-md-right text-center">
+            <p class="mb-0 small text-muted">
+              Built by Ember Eye — fueled by experiments and late-night builds.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/aos.js"></script>
-    <script src="js/smoothscroll.js"></script>
-    <script src="js/index.js"></script>
-    <script src="js/openImg.js"></script>
 
-</body>
+    <script>
+      AOS.init({
+        duration: 700,
+        once: true,
+      });
 
+      document.addEventListener("scroll", function () {
+        var navbar = document.querySelector(".glass-nav");
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+
+      document
+        .querySelectorAll('a.smoothScroll[href^="#"]')
+        .forEach(function (anchor) {
+          anchor.addEventListener("click", function (e) {
+            var targetId = this.getAttribute("href").substring(1);
+            var target = document.getElementById(targetId);
+            if (target) {
+              e.preventDefault();
+              window.scrollTo({
+                top: target.offsetTop - 70,
+                behavior: "smooth",
+              });
+            }
+          });
+        });
+
+      document
+        .getElementById("scrollToAboutBtn")
+        ?.addEventListener("click", function () {
+          const target = document.getElementById("about");
+          if (target) {
+            window.scrollTo({
+              top: target.offsetTop - 70,
+              behavior: "smooth",
+            });
+          }
+        });
+
+      const galleryImgs = document.querySelectorAll(".gallery-img");
+      const galleryModalImg = document.getElementById("galleryModalImg");
+      const galleryModal = $("#galleryModal");
+
+      galleryImgs.forEach((img) => {
+        img.addEventListener("click", function () {
+          galleryModalImg.src = this.src;
+          galleryModal.modal("show");
+        });
+      });
+    </script>
+  </body>
 </html>
